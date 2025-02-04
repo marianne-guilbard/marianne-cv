@@ -10,3 +10,4 @@ In this projet we investigated the role of BCAR1 in the SMYD2-BCAR3 pathway in b
 ![Graphical abstract] (pictures/example.jpg)
 
 
+
