@@ -17,7 +17,6 @@ BCAR1 interacts with BCAR3 (1), which undergoes SMYD2 methylation at lysine 334 
 - **Cloning** - Gibson assembly, Gateway recombinant cloning 
 - **Mutagenesis** - Quick-change II site-directed mutagenesis kit
 - **Protein analysis** - Co-immunoprecipitation combined with WB approach
-- **Lentiviral infection** - production, transduction and sorting by FACS (GFP-positive cells)
+- **Lentiviral infection** - production, transduction and sorting by FACS (GFP-positive cells) <br><br>
 
-## For more detail : 
-[M1-report](https://github.com/marianne-guilbard/Picture-/blob/main/M1%20report%20-%20Marianne%20Guilbard.pdf)
+### For more details : [M1-report](https://github.com/marianne-guilbard/Documents/raw/main/M1%20report%20-%20Marianne%20Guilbard.pdf)
