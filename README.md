@@ -18,7 +18,7 @@ Passionate about cancer biology, I specialize in studying tumor microenvironment
 **Master 1 Internship** - *University of Grenoble Alpes, [Institute for Advanced Biosciences](https://iab-grenoble.fr/)*    
 - Reserach team -  Protein methylation dynamics in cancer
 - Supervisor - Dr. Nicolas Reynoird, [researchGate](https://www.researchgate.net/profile/Nicolas-Reynoird-2)
-- :microscope: Reasearch projet - [Lysine methylation-based signaling in triple negative breast cancer](
+- :microscope: Reasearch projet - [Lysine methylation-based signaling in triple negative breast cancer](M1_internship.md)
 
 ## Publications  
 - 📄 *coming soon*
