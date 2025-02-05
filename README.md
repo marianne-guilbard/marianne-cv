@@ -2,7 +2,7 @@
 Welcome to my research page! You can find details about my work and projects. 
 
 ## About Me 
-Passionate about cancer biology, I specialize in studying tumor microenvironment interactions, EMT, and cell signaling. My expertise lies in understanding how extracellular proteins shape cancer progression. I am particularly interested in research that bridges fundamental biology with translational applications, aiming to contribute to innovative strategies in oncology.
+Passionate about cancer biology, I specialize in studying tumor microenvironment interactions, EMT, and cell signaling. I am particularly interested in research that bridges fundamental biology with translational applications, aiming to contribute to innovative strategies in oncology.
 
 ## Research experience
 **PhD position** - *University of Bordeaux, [BRIC](https://www.bricbordeaux.com/)*     
