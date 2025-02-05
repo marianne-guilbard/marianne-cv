@@ -19,4 +19,4 @@ Breast cancer remains the leading cause of cancer-related death among women worl
 - **Protein Analysis** - Western Blotting
 - **Production & purification of recombinant protein** - IPTG induction, Purification by thrombin cleavage, Dosage by coomassie analysis <br><br>
 
-### For more details : [M2-report](https://github.com/marianne-guilbard/Picture-/blob/main/M2%20report%20-%20marianne%20guilbard.pdf)
+### For more details : [M2-report](https://github.com/marianne-guilbard/Documents/raw/main/M2%20report%20-%20marianne%20guilbard.pdf)
