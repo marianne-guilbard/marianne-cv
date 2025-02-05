@@ -8,7 +8,7 @@ Passionate about cancer biology, I specialize in studying tumor microenvironment
 **PhD position** - *University of Bordeaux, [BRIC](https://www.bricbordeaux.com/)*     
 - Reserach team - [Reprogramming of Tumor Activity and the Associated Microenvironment](https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/)     
 - Supervisor - Dr. Frédéric Delom, [researchGate](https://www.researchgate.net/profile/Frederic-Delom)
-- 🔬 Reasearch projet - <br><br>
+- 🔬 Reasearch projet - Investigate the role of AGR2 in enhancing aggressive phenotype of Epithelial Ovarian cancer <br><br>
 
 **Master 2 Internship** - *University of Bordeaux, [BRIC](https://www.bricbordeaux.com/)*  
 - Reserach team - [Reprogramming of Tumor Activity and the Associated Microenvironment](https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/)       
