@@ -9,7 +9,7 @@ In this projet we investigated the role of BCAR1 in the SMYD2-BCAR3 pathway in b
 
 ### Graphical abstract 
 <p align="center">
-  <img src="https://github.com/marianne-guilbard/Picture-/blob/main/Master%201%20-%20internship%20graphical%20abstract.jpg" width="700">
+  <img src="Master 1 - internship graphical abstract.jpg" width="700">
 </p>
 BCAR1 interacts with BCAR3 (1), which undergoes SMYD2 methylation at lysine 334 (2). This modification facilitates the recruitment of formin-like proteins (FMNLs). Upon binding to methylated BCAR3, FMNLs become activated, enhancing actin polymerization (3). The increased actin assembly promotes plasma membrane extensions, leading to lamellipodia formation and contributing to cellular migration.
 
