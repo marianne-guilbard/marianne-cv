@@ -13,10 +13,10 @@ Passionate about cancer biology, I specialize in studying tumor microenvironment
 **Master 2 Internship** - *University of Bordeaux, [BRIC](https://www.bricbordeaux.com/)*  
 - Reserach team - [Reprogramming of Tumor Activity and the Associated Microenvironment](https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/)       
 - Supervisor - Dr. Frédéric Delom, [researchGate](https://www.researchgate.net/profile/Frederic-Delom)  
-- :microscope: Reasearch projet -  [Impact of AGR2 on senescence in breast cancer cell] (M2_internship.md)
+- :microscope: Reasearch projet -  [Impact of AGR2 on senescence in breast cancer cell](M2_internship.md)
 
 **Master 1 Internship** - *University of Grenoble Alpes, [Institute for Advanced Biosciences](https://iab-grenoble.fr/)*    
-- Reserach team -  [Protein methylation dynamics in cancer] (https://iab-grenoble.fr/en/recherche/equipes/dynamique-de-la-methylation-des-proteines-dans-le-cancer)
+- Reserach team -  [Protein methylation dynamics in cancer](https://iab-grenoble.fr/en/recherche/equipes/dynamique-de-la-methylation-des-proteines-dans-le-cancer)
 - Supervisor - Dr. Nicolas Reynoird, [researchGate](https://www.researchgate.net/profile/Nicolas-Reynoird-2)
 - :microscope: Reasearch projet - [Lysine methylation-based signaling in triple negative breast cancer](M1_internship.md)
 
