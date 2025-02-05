@@ -28,4 +28,4 @@ Passionate about cancer biology, I specialize in studying tumor microenvironment
 
 
 ## Let's get in contact
-📧 Email: marianne.guilbard@gmail.com 
+📧 [Email](mailto:marianne.guilbard@gmail.com)
