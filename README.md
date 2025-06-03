@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/simple-banner.jpg" alt="Simple abstract banner" width="100%">
+</p>
+
 <h1 align="center">👩‍🔬 Marianne Guilbard</h1>
 <p align="center">
   Welcome to my research page! You can find details about my work and projects. 
@@ -7,6 +11,8 @@
 
 ## 🧬 About Me
 Passionate about cancer biology, I specialize in studying ... . I am particularly interested in research that bridges fundamental biology with translational applications, aiming to contribute to innovative strategies in oncology.
+
+---
 
 ## 🔬 Research Experience
 
