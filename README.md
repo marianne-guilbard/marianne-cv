@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="images/simple-banner.jpg" alt="Simple abstract banner" width="100%">
-</p>
-
 <h1 align="center">👩‍🔬 Marianne Guilbard</h1>
 <p align="center">
   Welcome to my research page! You can find details about my work and projects. 
