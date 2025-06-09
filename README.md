@@ -6,8 +6,10 @@
 ---
 
 ## 🧬 About Me
+<p align="justify">
 Passionate about cancer biology, I am particularly drawn to exploring the phenotypic plasticity of tumor cells, including processes such as migration, metastasis, and epithelial–mesenchymal transition. 
 More broadly, I am interested in research that bridges fundamental mechanisms with translational perspectives to advance our understanding of cancer progression.
+</p>
 
 ---
 
@@ -50,6 +52,11 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 - 📄 [Endoplasmic Reticulum Homeostasis—From Molecules to Organisms: Report on the 14th International Calreticulin Workshop](https://onlinelibrary-wiley-com.proxy.insermbiblio.inist.fr/doi/full/10.1111/jcmm.17840)
 
 ---
+
+## Conferences 
+
+
+
 
 ## 📫 Let's Get in Contact
 ✉️ [Email Me](mailto:marianne.guilbard@gmail.com)  
