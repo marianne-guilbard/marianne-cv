@@ -10,7 +10,7 @@ An endoplasmic reticulum resident’s protein AGR2 (anterior gradient 2) which b
 
 ### Graphic Abstract
 <p align="center">
-  <img src="M2-Figure1.jpg" width="800">
+  <img src="M2_internship_1.jpg" width="800">
 </p>
 <br>
 <p align="center">
@@ -24,4 +24,6 @@ An endoplasmic reticulum resident’s protein AGR2 (anterior gradient 2) which b
 - **Production & purification of recombinant protein** - IPTG induction, Purification by thrombin cleavage, Dosage by coomassie analysis <br><br>
 
 ### For more details : [M2-report](https://github.com/marianne-guilbard/Documents/raw/main/M2%20report%20-%20marianne%20guilbard.pdf)
+
+
 
