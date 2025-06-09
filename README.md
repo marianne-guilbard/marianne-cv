@@ -6,7 +6,8 @@
 ---
 
 ## 🧬 About Me
-Passionate about cancer biology, I specialize in studying ... . I am particularly interested in research that bridges fundamental biology with translational applications, aiming to contribute to innovative strategies in oncology.
+Passionate about cancer biology, I am particularly drawn to exploring the phenotypic plasticity of tumor cells, including processes such as migration, metastasis, and epithelial–mesenchymal transition. 
+More broadly, I am interested in research that bridges fundamental mechanisms with translational perspectives to advance our understanding of cancer progression.
 
 ---
 
@@ -17,9 +18,10 @@ Passionate about cancer biology, I specialize in studying ... . I am particularl
 
 - 🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a>  
 - 👨‍🏫 Supervisor: Dr. Frédéric Delom – [ResearchGate](https://www.researchgate.net/profile/Frederic-Delom)  
-- 🔍 Project: Investigating the role of AGR2 in enhancing the aggressive phenotype of epithelial ovarian cancer
+- 🔍 Project: eAGR2 & tumorogenesis
 
 </details>
+<br>
 
 <details>
   <summary><strong>🧫 Master 2 Internship – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></strong></summary>
@@ -29,6 +31,7 @@ Passionate about cancer biology, I specialize in studying ... . I am particularl
 - 🔍 Project: [Impact of AGR2 on senescence in breast cancer cells](M2_internship.md)
 
 </details>
+<br>
 
 <details>
   <summary><strong>🔎 Master 1 Internship – University of Grenoble Alpes, <a href="https://iab-grenoble.fr/">IAB</a></strong></summary>
