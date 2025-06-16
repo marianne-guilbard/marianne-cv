@@ -39,25 +39,55 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 ---
 
 ## 📚 Publications  
-- 📄 *Coming soon*
 - 📄 [Modulation of PDI Functions by Localization: The Example of the Anterior Gradient Family](https://your-long-link.com)
 - 📄 [Endoplasmic Reticulum Homeostasis—From Molecules to Organisms: Report on the 14th International Calreticulin Workshop](https://onlinelibrary-wiley-com.proxy.insermbiblio.inist.fr/doi/full/10.1111/jcmm.17840)
+
+<br>
 
 ---
 
 ## Conferences 
-🗣️ Oral Communications
+**🗣️ Oral Communications**
 - 3rd Bordeaux Cancer Research Meeting, Bordeaux, France – October 2024 - “Endoplasmic Reticulum Proteostasis In High Grade Serous Ovarian Cancer” 
 - ENLIGHT Congress, Bordeaux, France – September 2023 - “AGR2 & Gynecological cancers”
   
 <br>
 
-📌 Poster Presentations
+**📌 Poster Presentations**
 - Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2024
 - Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2023
 - 14th International Calreticulin Workshop, Saint-Malo, France – May 2023 - “AGR2: A link between ER proteostasis and cancer proliferation”,🏆 Awarded Best Poster
 
+<br>
 
+<p align="center">
+  <img src="Picture gitbub_conf.png" alt="Poster Image" width="800"/>
+</p>
+
+<br>
+
+---
+
+## 🏫 Education  
+
+<div align="left">
+  
+**PhD in Cancer Biology**  
+📍 University of Bordeaux, France | *2023-2026* 
+
+**Master’s Degree in Physiology, Epigenetics, Differentiation and Cancer**  
+📍 University of Grenoble Alpes, France | *2020–2022*  
+🔗 [Master Program](https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-biologie-IAQKB0GE/parcours-physiology-epigenetics-differentiation-and-cancer-2e-annee-IBAVFFMU.html)
+
+**Bachelor’s Degree in Cellular Biology, Genetics, Microbiology, Animal Physiology**  
+📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland | *2017–2020*  
+🔗 [Bachelor Program](https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462)
+
+</div>
+
+<img src="path/to/map.png" align="right" width="300"/>
+
+---
 
 ## 📫 Let's Get in Contact
 ✉️ [Email Me](mailto:marianne.guilbard@gmail.com)  
