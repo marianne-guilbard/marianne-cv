@@ -70,10 +70,6 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 ---
 
 ## 🏫 Education  
-
-<br>
-
-<img src="Study&internships.png" align="right" width="300" alt="Map of academic journey"/>
   
 **PhD in Cancer Biology**  
 📍 University of Bordeaux, France | *2023-2026* 
@@ -86,9 +82,11 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland | *2017–2020*  
 🔗 [Bachelor Program](https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462)
 
-<div style="clear: both;"></div>
+<p align="center">
+  <img src="Study&internships.png" width="300" alt="Map of academic journey"/>
+</p>
 
-<br><br><br>
+<br>
 
 ---
 
