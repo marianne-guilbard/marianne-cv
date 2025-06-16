@@ -10,12 +10,12 @@ An endoplasmic reticulum resident’s protein AGR2 (anterior gradient 2) which b
 
 ### Graphic Abstract
 <p align="center">
-  <img src="M2_internship_1.jpg" width="800">
+  <img src="M2_internship_2.jpg" width="100%">
 </p>
-<br>
-<p align="center">
-  <img src="M2-figure2bis.png" width="800">
-</p>
+
+<p align="center" style="font-size: 12px;"><em>
+The secretion of extracellular AGR2 (eAGR2) by breast cancer cells facilitates their escape from therapy-induced senescence (TIS). These findings suggest that eAGR2 may play a critical role in promoting resistance to TIS, thereby enabling cancer cells to bypass senescence and sustain proliferative capacity.
+</em></p>
 
 ### Methods 
 - **Cell Culture** : MCF7 breast cancer cell line
