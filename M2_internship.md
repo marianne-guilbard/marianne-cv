@@ -10,7 +10,7 @@ An endoplasmic reticulum resident’s protein AGR2 (anterior gradient 2) which b
 
 ### Graphic Abstract
 <p align="center">
-  <img src="M2_internship_2.jpg" width="100%">
+  <img src="M2-Figure2.jpg" width="80%">
 </p>
 
 <p align="center" style="font-size: 12px;"><em>
