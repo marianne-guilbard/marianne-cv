@@ -23,7 +23,7 @@ The secretion of extracellular AGR2 (eAGR2) by breast cancer cells facilitates t
 - **Protein Analysis** - Western Blotting
 - **Production & purification of recombinant protein** - IPTG induction, Purification by thrombin cleavage, Dosage by coomassie analysis <br><br>
 
-### For more details : [M2-report](https://github.com/marianne-guilbard/Documents/raw/main/M2%20report%20-%20marianne%20guilbard.pdf)
+### The full internship report is available for consultation here : [M2 Internship report](https://github.com/marianne-guilbard/marianne-cv/blob/main/M2%20report%20-%20marianne%20guilbard.pdf)
 
 
 
