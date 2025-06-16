@@ -69,8 +69,8 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 ---
 
 ## 🏫 Education  
-
-<div align="left">
+<br>
+<img src="Study&internships.png" align="right" width="300" alt="Map of academic journey"/>
   
 **PhD in Cancer Biology**  
 📍 University of Bordeaux, France | *2023-2026* 
@@ -83,11 +83,12 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland | *2017–2020*  
 🔗 [Bachelor Program](https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462)
 
-</div>
+<div style="clear: both;"></div>
 
-<img src="path/to/map.png" align="right" width="300"/>
+<br><br><br>
 
 ---
 
 ## 📫 Let's Get in Contact
 ✉️ [Email Me](mailto:marianne.guilbard@gmail.com)  
+
