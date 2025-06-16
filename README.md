@@ -90,6 +90,6 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 ---
 
 ## 📫 Let's Get in Contact
-✉️ [Email Me](mailto:marianne.guilbard@gmail.com) 
-[Google Scholar](https://scholar.google.fr/citations?user=8LgCwdwAAAAJ&hl=fr&oi=sra)  | 
+✉️ [Email Me](mailto:marianne.guilbard@gmail.com)  
+🔗 [Google Scholar](https://scholar.google.fr/citations?user=8LgCwdwAAAAJ&hl=fr&oi=sra)  |  [ORCID](https://orcid.org/0009-0000-9052-1309)
 
