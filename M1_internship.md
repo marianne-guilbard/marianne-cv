@@ -13,7 +13,7 @@ In this projet we investigated the role of BCAR1 in the SMYD2-BCAR3 pathway in b
 
 ### Graphical abstract 
 <p align="center">
-  <img src="Master 1 - internship graphical abstract.jpg" width="100%">
+  <img src="Master 1 - internship graphical abstract.jpg" width="80%">
 </p>
 
 <p align="center" style="font-size: 12px;"><em>
