@@ -15,21 +15,21 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 
 ## 🔬 Research Experience
 
-🎓 PhD Position – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></strong></summary>
+🎓 PhD Position – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a>
 - 🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a>  
 - 👨‍🏫 Supervisor: Dr. Frédéric Delom – [ResearchGate](https://www.researchgate.net/profile/Frederic-Delom)  
 - 🔍 Project: eAGR2 & tumorogenesis
 
 <br>
 
-🧫 Master 2 Internship – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></strong></summary>
+🧫 Master 2 Internship – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a>
 - 🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a>  
 - 👨‍🏫 Supervisor: Dr. Frédéric Delom – [ResearchGate](https://www.researchgate.net/profile/Frederic-Delom)  
 - 🔍 Project: [Impact of AGR2 on senescence in breast cancer cells](M2_internship.md)
 
 <br>
 
-🧫 Master 1 Internship – University of Grenoble Alpes, <a href="https://iab-grenoble.fr/">IAB</a></strong></summary>
+🧫 Master 1 Internship – University of Grenoble Alpes, <a href="https://iab-grenoble.fr/">IAB</a>
 - 🧪 Research team: <a href="https://iab-grenoble.fr/en/recherche/equipes/dynamique-de-la-methylation-des-proteines-dans-le-cancer/">Protein methylation dynamics in cancer</a>
 - 👨‍🏫 Supervisor: Dr. Nicolas Reynoird – [ResearchGate](https://www.researchgate.net/profile/Nicolas-Reynoird-2)  
 - 🔍 Project:  [Lysine methylation-based signaling in triple-negative breast cancer](M1_internship.md)
