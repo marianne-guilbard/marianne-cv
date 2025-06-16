@@ -30,4 +30,4 @@ In this projet we investigated the role of BCAR1 in the SMYD2-BCAR3 pathway in b
 - **Lentiviral infection** - production, transduction and sorting by FACS (GFP-positive cells) <br><br>
 <br>
 
-### For more details : [M1-report](https://github.com/marianne-guilbard/Documents/raw/main/M1%20report%20-%20Marianne%20Guilbard.pdf)
+### The full internship report is available for consultation here: [M1 internship report](https://github.com/marianne-guilbard/marianne-cv/blob/main/Master%201%20-%20internship%20graphical%20abstract.jpg)
