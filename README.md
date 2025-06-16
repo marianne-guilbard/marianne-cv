@@ -15,34 +15,26 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 
 ## 🔬 Research Experience
 
-<details>
-  <summary><strong>🎓 PhD Position – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></strong></summary>
-
+🎓 PhD Position – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></strong></summary>
 - 🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a>  
 - 👨‍🏫 Supervisor: Dr. Frédéric Delom – [ResearchGate](https://www.researchgate.net/profile/Frederic-Delom)  
 - 🔍 Project: eAGR2 & tumorogenesis
 
-</details>
 <br>
 
-<details>
-  <summary><strong>🧫 Master 2 Internship – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></strong></summary>
-
+🧫 Master 2 Internship – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></strong></summary>
 - 🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a>  
 - 👨‍🏫 Supervisor: Dr. Frédéric Delom – [ResearchGate](https://www.researchgate.net/profile/Frederic-Delom)  
 - 🔍 Project: [Impact of AGR2 on senescence in breast cancer cells](M2_internship.md)
 
-</details>
 <br>
 
-<details>
-  <summary><strong>🔎 Master 1 Internship – University of Grenoble Alpes, <a href="https://iab-grenoble.fr/">IAB</a></strong></summary>
-
-- 🧪 Research team:<a href=" in cancer](https://iab-grenoble.fr/en/recherche/equipes/dynamique-de-la-methylation-des-proteines-dans-le-cancer/" >Protein methylation dynamics in cancer</a>
+🧫 Master 1 Internship – University of Grenoble Alpes, <a href="https://iab-grenoble.fr/">IAB</a></strong></summary>
+- 🧪 Research team: <a href="https://iab-grenoble.fr/en/recherche/equipes/dynamique-de-la-methylation-des-proteines-dans-le-cancer/">Protein methylation dynamics in cancer</a>
 - 👨‍🏫 Supervisor: Dr. Nicolas Reynoird – [ResearchGate](https://www.researchgate.net/profile/Nicolas-Reynoird-2)  
 - 🔍 Project:  [Lysine methylation-based signaling in triple-negative breast cancer](M1_internship.md)
 
-</details>
+<br>
 
 ---
 
@@ -54,7 +46,16 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 ---
 
 ## Conferences 
+🗣️ Oral Communications
+- 3rd Bordeaux Cancer Research Meeting, Bordeaux, France – October 2024 - “Endoplasmic Reticulum Proteostasis In High Grade Serous Ovarian Cancer” 
+- ENLIGHT Congress, Bordeaux, France – September 2023 - “AGR2 & Gynecological cancers”
+  
+<br>
 
+📌 Poster Presentations
+- Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2024
+- Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2023
+- 14th International Calreticulin Workshop, Saint-Malo, France – May 2023 - “AGR2: A link between ER proteostasis and cancer proliferation”,🏆 Awarded Best Poster
 
 
 
