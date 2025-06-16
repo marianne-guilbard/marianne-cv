@@ -82,8 +82,10 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland | *2017–2020*  
 🔗 [Bachelor Program](https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462)
 
+<br>
+
 <p align="center">
-  <img src="Study&internships.png" width="300" alt="Map of academic journey"/>
+  <img src="Study&internships.png" width="400" alt="Map of academic journey"/>
 </p>
 
 <br>
