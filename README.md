@@ -72,14 +72,17 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 ## 🏫 Education  
   
 **PhD in Cancer Biology**  
-📍 University of Bordeaux, France | *2023-2026* 
+📍 University of Bordeaux, France  
+📅 *2023-2026* 
 
 **Master’s Degree in Physiology, Epigenetics, Differentiation and Cancer**  
-📍 University of Grenoble Alpes, France | *2020–2022*  
+📍 University of Grenoble Alpes, France   
+📅 *2020–2022*  
 🔗 [Master Program](https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-biologie-IAQKB0GE/parcours-physiology-epigenetics-differentiation-and-cancer-2e-annee-IBAVFFMU.html)
 
 **Bachelor’s Degree in Cellular Biology, Genetics, Microbiology, Animal Physiology**  
-📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland | *2017–2020*  
+📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland   
+📅 *2017–2020*  
 🔗 [Bachelor Program](https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462)
 
 <br>
