@@ -8,7 +8,8 @@
 ## 🧬 About Me
 <p align="justify">
 Passionate about cancer biology, I am particularly drawn to exploring the phenotypic plasticity of tumor cells, including processes such as migration, metastasis, and epithelial–mesenchymal transition. 
-More broadly, I am interested in research that bridges fundamental mechanisms with translational perspectives to advance our understanding of cancer progression.
+More broadly, I am interested in research that bridges fundamental mechanisms with translational perspectives to advance our understanding of cancer progression.       
+I am currently looking for postdoctoral opportunities to broaden my research experience, take on new scientific challenges, and collaborate with inspiring teams.
 </p>
 
 ---
@@ -39,8 +40,8 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 ---
 
 ## 📚 Publications  
-- 📄 [Modulation of PDI Functions by Localization: The Example of the Anterior Gradient Family](https://your-long-link.com)
-- 📄 [Endoplasmic Reticulum Homeostasis—From Molecules to Organisms: Report on the 14th International Calreticulin Workshop](https://onlinelibrary-wiley-com.proxy.insermbiblio.inist.fr/doi/full/10.1111/jcmm.17840)
+- 📄 [Modulation of PDI Functions by Localization: The Example of the Anterior Gradient Family](https://doi.org/10.1089/ars.2024.0561)
+- 📄 [Endoplasmic Reticulum Homeostasis—From Molecules to Organisms: Report on the 14th International Calreticulin Workshop](https://doi.org/10.1111/jcmm.17840)
 
 <br>
 
@@ -69,7 +70,9 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 ---
 
 ## 🏫 Education  
+
 <br>
+
 <img src="Study&internships.png" align="right" width="300" alt="Map of academic journey"/>
   
 **PhD in Cancer Biology**  
@@ -90,6 +93,11 @@ More broadly, I am interested in research that bridges fundamental mechanisms wi
 ---
 
 ## 📫 Let's Get in Contact
-✉️ [Email Me](mailto:marianne.guilbard@gmail.com)  
-🔗 [Google Scholar](https://scholar.google.fr/citations?user=8LgCwdwAAAAJ&hl=fr&oi=sra)  |  [ORCID](https://orcid.org/0009-0000-9052-1309)
 
+📧 [Email Me](mailto:your.email@example.com)  
+🔗 [Google Scholar](https://scholar.google.com/) • [ORCID](https://orcid.org/0000-0000-0000-0000)
+
+<br>
+
+<p align="center">Looking forward to exciting collaborations and new research adventures! 🚀  
+Let’s connect!</p>
