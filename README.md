@@ -97,8 +97,8 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 
 ## 📫 Let's Get in Contact
 
-📧 [Email Me](mailto:your.email@example.com)  
-🔗 [Google Scholar](https://scholar.google.com/) • [ORCID](https://orcid.org/0000-0000-0000-0000)
+📧 [Email Me](marianne.guilbard@gmail.com)  
+🔗 [Google Scholar](https://scholar.google.com/citations?user=8LgCwdwAAAAJ&hl=fr) 
 
 <br>
 
