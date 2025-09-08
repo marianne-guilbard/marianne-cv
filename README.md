@@ -19,7 +19,7 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 🎓 PhD Position – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a>
 - 🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a>  
 - 👨‍🏫 Supervisor: Dr. Frédéric Delom – [ResearchGate](https://www.researchgate.net/profile/Frederic-Delom)  
-- 🔍 Project: eAGR2 & tumorogenesis
+- 🔍 Project: Compartmentalized functions of AGR2 in cancer progression
 
 <br>
 
