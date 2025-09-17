@@ -63,7 +63,7 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 <br>
 
 <p align="center">
-  <img src="Picture gitbub_conf_bis.png" alt="Poster Image" width="800"/>
+  <img src="Picture gitbub_conf_bis.png" alt="Poster Image" width="900"/>
 </p>
 
 <br>
