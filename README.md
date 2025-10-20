@@ -97,6 +97,13 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 
 ---
 
+## 🤝 Beyond Research: Professional & Volunteering Work
+
+Discover some of my previous professional and volunteering experiences [here.](others_experiences.md)
+
+<br>
+
+---
 ## 📫 Let's Get in Contact
 
 📧 [Email Me](mailto:marianne.guilbard@gmail.com)  
