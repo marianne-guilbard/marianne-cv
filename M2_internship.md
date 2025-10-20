@@ -25,5 +25,6 @@ The secretion of extracellular AGR2 (eAGR2) by breast cancer cells facilitates t
 
 ### The full internship report is available for consultation here : [Download M2 Internship Report](https://github.com/marianne-guilbard/marianne-cv/raw/main/M2%20report%20-%20marianne%20guilbard.pdf)
 
+<br>
 
-
+*🔙 [Back to main page](README.md)*
