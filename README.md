@@ -55,7 +55,8 @@ I am currently looking for postdoctoral opportunities to broaden my research exp
 <br>
 
 **📌 Poster Presentations**
-- FEBS-IUBMB-ENABLE conference "Bridging Minds Interdisciplinary research for the future of life sciences", Glasgow, UK - Septembre 2025
+- 5th Endoplasmic Reticulum International Symposium, Paris, France - October 2025
+- FEBS-IUBMB-ENABLE conference "Bridging Minds Interdisciplinary research for the future of life sciences", Glasgow, UK - Septembre 2025 (FEBS Travel grant) 
 - Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2024
 - Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2023
 - 14th International Calreticulin Workshop, Saint-Malo, France – May 2023 - “AGR2: A link between ER proteostasis and cancer proliferation”,🏆 Awarded Best Poster
