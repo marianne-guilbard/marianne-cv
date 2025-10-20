@@ -31,3 +31,7 @@ In this projet we investigated the role of BCAR1 in the SMYD2-BCAR3 pathway in b
 <br>
 
 ### The full internship report is available for consultation here: [Download M1 Internship Report](https://github.com/marianne-guilbard/marianne-cv/raw/main/M1%20report%20-%20Marianne%20Guilbard.pdf)
+
+<br>
+
+*🔙 [Back to main page](README.md)*
