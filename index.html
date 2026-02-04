@@ -29,7 +29,7 @@
   .container{
     max-width: 1050px;
     margin: 0 auto;
-    padding: 28px 20px 70px; /* slightly tighter because navbar exists */
+    padding: 28px 20px 70px;
   }
 
   a{ color:var(--link); text-decoration:none; }
@@ -179,7 +179,6 @@
     gap:32px;
     margin-top:20px;
   }
-
   .column ul{ padding-left:18px; }
 
   /* ===== EDUCATION LAYOUT ===== */
@@ -277,6 +276,7 @@
         <a href="#conf">Conf</a>
         <a href="#teach">Teaching</a>
         <a href="#edu">Education</a>
+        <a href="#beyond">Beyond</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -298,7 +298,7 @@
 
     <hr>
 
-     <!-- ABOUT ME (keep open, short) -->
+    <!-- ABOUT ME (keep open, short) -->
     <h2 id="about">🧬 About Me</h2>
     <p class="justify">
       My research interests focus on cellular adaptation mechanisms under stress conditions, particularly endoplasmic reticulum (ER) stress, unfolded protein response (UPR) signaling, and proteostasis regulation in pathological contexts.
@@ -306,12 +306,12 @@
       More broadly, I aim to investigate how fundamental stress response mechanisms can be leveraged to better understand pathological progression and identify new points of therapeutic vulnerability.
       I am currently seeking postdoctoral opportunities to expand my expertise, address new biological questions, and contribute to collaborative research environments.
     </p>
-    
+
     <hr>
-    
+
     <!-- RESEARCH EXPERIENCE (open by default) -->
-    <details class="accordion" open>
-      <summary id="research">🔬 Research Experience</summary>
+    <details class="accordion" id="research" open>
+      <summary>🔬 Research Experience</summary>
       <div class="accordion-body">
 
         <div class="entry">
@@ -344,9 +344,9 @@
       </div>
     </details>
 
-    <!-- FUNDING & AWARDS (collapsed by default) -->
-    <details class="accordion">
-      <summary id="funding">💰 Funding &amp; Awards</summary>
+    <!-- FUNDING & AWARDS -->
+    <details class="accordion" id="funding">
+      <summary>💰 Funding &amp; Awards</summary>
       <div class="accordion-body">
 
         <div class="entry">
@@ -376,10 +376,9 @@
       </div>
     </details>
 
-
     <!-- PUBLICATIONS -->
-    <details class="accordion">
-      <summary id="pubs">📚 Publications</summary>
+    <details class="accordion" id="pubs">
+      <summary>📚 Publications</summary>
       <div class="accordion-body">
         <ul>
           <li>📄 <a href="https://doi.org/10.1089/ars.2024.0561">Modulation of PDI Functions by Localization: The Example of the Anterior Gradient Family</a></li>
@@ -387,11 +386,10 @@
         </ul>
       </div>
     </details>
-    
 
-    <!-- CONFERENCES (collapsed by default) -->
-    <details class="accordion">
-      <summary id="conf">Conferences</summary>
+    <!-- CONFERENCES -->
+    <details class="accordion" id="conf">
+      <summary>Conferences</summary>
       <div class="accordion-body">
 
         <div class="two-columns">
@@ -431,9 +429,9 @@
       </div>
     </details>
 
-    <!-- TEACHING (collapsed by default) -->
-    <details class="accordion">
-      <summary id="teach">🎓 Teaching &amp; Mentorship</summary>
+    <!-- TEACHING -->
+    <details class="accordion" id="teach">
+      <summary>🎓 Teaching &amp; Mentorship</summary>
       <div class="accordion-body">
 
         <div class="entry">
@@ -451,9 +449,9 @@
       </div>
     </details>
 
-    <!-- EDUCATION (collapsed by default) -->
-    <details class="accordion">
-      <summary id="edu">🏫 Education</summary>
+    <!-- EDUCATION -->
+    <details class="accordion" id="edu">
+      <summary>🏫 Education</summary>
       <div class="accordion-body">
 
         <div class="education-layout">
@@ -486,10 +484,9 @@
       </div>
     </details>
 
-
     <!-- BEYOND RESEARCH -->
-    <details class="accordion">
-      <summary id="beyond">🤝 Beyond Research: Professional &amp; Volunteering Work</summary>
+    <details class="accordion" id="beyond">
+      <summary>🤝 Beyond Research: Professional &amp; Volunteering Work</summary>
       <div class="accordion-body">
         <p>
           Discover some of my previous professional and volunteering experiences
@@ -497,7 +494,7 @@
         </p>
       </div>
     </details>
-    
+
     <hr>
 
     <!-- CONTACT -->
@@ -516,6 +513,27 @@
   </div>
 
   <a class="backtotop" href="#top">↑ Top</a>
+
+  <script>
+    // Open <details> accordion when navigating via hash links (e.g., #conf, #pubs)
+    function openAccordionFromHash() {
+      const hash = window.location.hash;
+      if (!hash) return;
+
+      const target = document.querySelector(hash);
+      if (target && target.tagName && target.tagName.toLowerCase() === "details") {
+        target.open = true;
+
+        // Offset for sticky navbar so the title isn't hidden
+        const yOffset = -80;
+        const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: "smooth" });
+      }
+    }
+
+    window.addEventListener("load", openAccordionFromHash);
+    window.addEventListener("hashchange", openAccordionFromHash);
+  </script>
 
 </body>
 </html>
