@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,6 +17,8 @@
 
   *{ box-sizing:border-box; }
 
+  html{ scroll-behavior: smooth; }
+
   body{
     margin:0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -28,7 +29,7 @@
   .container{
     max-width: 1050px;
     margin: 0 auto;
-    padding: 42px 20px 70px;
+    padding: 28px 20px 70px; /* slightly tighter because navbar exists */
   }
 
   a{ color:var(--link); text-decoration:none; }
@@ -37,7 +38,60 @@
   hr{
     border:none;
     border-top:1px solid var(--line);
-    margin: 34px 0;
+    margin: 28px 0;
+  }
+
+  /* ===== TOP NAV ===== */
+  .topnav{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(13,17,23,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .topnav-inner{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .brand{
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .links{
+    display:flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .links a{
+    font-size: 13px;
+    color: var(--muted);
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-decoration:none;
+  }
+
+  .links a:hover{
+    color: var(--text);
+    border-color: var(--line);
+    text-decoration: none;
+  }
+
+  @media (max-width: 700px){
+    .links a{ padding: 6px 8px; font-size: 12px; }
   }
 
   /* ===== HEADER ===== */
@@ -113,41 +167,9 @@
 
   .muted{ color: var(--muted); }
 
-    /* Education layout */
-.education-layout{
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 32px;
-  align-items: start;
-  margin-top: 16px;
-}
-
-.education-image img{
-  width: 400px;        /* adjust if needed */
-  max-width: 100%;
-  border-radius: 12px;
-}
-
-/* Stack on mobile */
-@media (max-width: 900px){
-  .education-layout{
-    grid-template-columns: 1fr;
-  }
-  .education-image{
-    text-align: center;
-  }
-}
-
   /* ===== CENTERED IMAGES ===== */
-  .center{
-    text-align:center;
-  }
-
-  .center img{
-    max-width: 100%;
-    height:auto;
-  }
-
+  .center{ text-align:center; }
+  .center img{ max-width: 100%; height:auto; }
   .small-gap{ margin-top: 12px; }
 
   /* ===== TWO-COLUMN CONFERENCES ===== */
@@ -158,8 +180,68 @@
     margin-top:20px;
   }
 
-  .column ul{
-    padding-left:18px;
+  .column ul{ padding-left:18px; }
+
+  /* ===== EDUCATION LAYOUT ===== */
+  .education-layout{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: start;
+    margin-top: 16px;
+  }
+
+  .education-image img{
+    width: 400px;
+    max-width: 100%;
+    border-radius: 12px;
+    display:block;
+  }
+
+  @media (max-width: 900px){
+    .education-layout{ grid-template-columns: 1fr; }
+    .education-image{ text-align: center; }
+  }
+
+  /* ===== ACCORDIONS ===== */
+  .accordion{
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: rgba(255,255,255,0.02);
+    margin: 14px 0;
+    overflow: hidden;
+  }
+
+  .accordion summary{
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 12px 14px;
+    list-style: none;
+  }
+
+  .accordion summary::-webkit-details-marker{ display:none; }
+
+  .accordion .accordion-body{
+    padding: 0 14px 14px;
+  }
+
+  /* ===== BACK TO TOP ===== */
+  .backtotop{
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid var(--line);
+    color: var(--text);
+    padding: 10px 12px;
+    border-radius: 12px;
+    text-decoration:none;
+    font-size: 14px;
+  }
+  .backtotop:hover{
+    background: rgba(255,255,255,0.14);
+    text-decoration:none;
   }
 
   /* ===== RESPONSIVE ===== */
@@ -178,11 +260,29 @@
       grid-template-columns: 1fr;
     }
   }
-</style>
+  </style>
 </head>
 
 <body>
-  <div class="container">
+
+  <!-- Sticky navigation -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a class="brand" href="#top">Marianne Guilbard</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#funding">Funding</a>
+        <a href="#pubs">Pubs</a>
+        <a href="#conf">Conf</a>
+        <a href="#teach">Teaching</a>
+        <a href="#edu">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" id="top">
 
     <!-- HEADER -->
     <div class="header">
@@ -198,8 +298,8 @@
 
     <hr>
 
-    <!-- ABOUT ME -->
-    <h2>🧬 About Me</h2>
+    <!-- ABOUT ME (keep open, short) -->
+    <h2 id="about">🧬 About Me</h2>
     <p class="justify">
       Passionate about cancer biology, I am particularly drawn to exploring the phenotypic plasticity of tumor cells, including processes such as migration, metastasis, and epithelial–mesenchymal transition.
       More broadly, I am interested in research that bridges fundamental mechanisms with translational perspectives to advance our understanding of cancer progression.
@@ -208,78 +308,77 @@
 
     <hr>
 
-    <!-- RESEARCH EXPERIENCE -->
-    <h2>🔬 Research Experience</h2>
+    <!-- RESEARCH EXPERIENCE (open by default) -->
+    <details class="accordion" open>
+      <summary id="research">🔬 Research Experience</summary>
+      <div class="accordion-body">
 
-    <div class="entry">
-      <div class="entry-title">🎓 PhD Position – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></div>
-      <ul>
-        <li>🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a></li>
-        <li>👨‍🏫 Supervisor: Dr. Frédéric Delom – <a href="https://www.researchgate.net/profile/Frederic-Delom">ResearchGate</a></li>
-        <li>🔍 Learn more about the project: Compartmentalized functions of AGR2 in cancer progression</li>
-      </ul>
-    </div>
+        <div class="entry">
+          <div class="entry-title">🎓 PhD Position – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></div>
+          <ul>
+            <li>🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a></li>
+            <li>👨‍🏫 Supervisor: Dr. Frédéric Delom – <a href="https://www.researchgate.net/profile/Frederic-Delom">ResearchGate</a></li>
+            <li>🔍 Learn more about the project: Compartmentalized functions of AGR2 in cancer progression</li>
+          </ul>
+        </div>
 
-    <div class="entry">
-      <div class="entry-title">🧫 Master 2 Internship – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></div>
-      <ul>
-        <li>🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a></li>
-        <li>👨‍🏫 Supervisor: Dr. Frédéric Delom – <a href="https://www.researchgate.net/profile/Frederic-Delom">ResearchGate</a></li>
-        <li>🔍 Learn more about the project: <a href="M2_internship.md">Impact of AGR2 on senescence in breast cancer cells</a></li>
-      </ul>
-    </div>
+        <div class="entry">
+          <div class="entry-title">🧫 Master 2 Internship – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></div>
+          <ul>
+            <li>🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a></li>
+            <li>👨‍🏫 Supervisor: Dr. Frédéric Delom – <a href="https://www.researchgate.net/profile/Frederic-Delom">ResearchGate</a></li>
+            <li>🔍 Learn more about the project: <a href="M2_internship.md">Impact of AGR2 on senescence in breast cancer cells</a></li>
+          </ul>
+        </div>
 
-    <div class="entry">
-      <div class="entry-title">🧫 Master 1 Internship – University of Grenoble Alpes, <a href="https://iab-grenoble.fr/">IAB</a></div>
-      <ul>
-        <li>🧪 Research team: <a href="https://iab-grenoble.fr/en/recherche/equipes/dynamique-de-la-methylation-des-proteines-dans-le-cancer/">Protein methylation dynamics in cancer</a></li>
-        <li>👨‍🏫 Supervisor: Dr. Nicolas Reynoird – <a href="https://www.researchgate.net/profile/Nicolas-Reynoird-2">ResearchGate</a></li>
-        <li>🔍 Learn more about the project: <a href="M1_internship.md">Lysine methylation-based signaling in triple-negative breast cancer</a></li>
-      </ul>
-    </div>
+        <div class="entry">
+          <div class="entry-title">🧫 Master 1 Internship – University of Grenoble Alpes, <a href="https://iab-grenoble.fr/">IAB</a></div>
+          <ul>
+            <li>🧪 Research team: <a href="https://iab-grenoble.fr/en/recherche/equipes/dynamique-de-la-methylation-des-proteines-dans-le-cancer/">Protein methylation dynamics in cancer</a></li>
+            <li>👨‍🏫 Supervisor: Dr. Nicolas Reynoird – <a href="https://www.researchgate.net/profile/Nicolas-Reynoird-2">ResearchGate</a></li>
+            <li>🔍 Learn more about the project: <a href="M1_internship.md">Lysine methylation-based signaling in triple-negative breast cancer</a></li>
+          </ul>
+        </div>
 
-    <hr>
+      </div>
+    </details>
 
-    <!-- FUNDING & AWARDS -->
-    <h2>💰 Funding & Awards</h2>
-    
-    <div class="entry">
-      <p class="entry-title">FEBS Travel Grant | Federation of European Biochemical Societies</p>
-      <p>
-        Awarded to attend and present research at the FEBS-IUBMB-ENABLE conference, Glasgow, UK.
-      </p>
-      <p class="muted">📅 2025</p>
-    </div>
-    
-    <div class="entry">
-      <p class="entry-title">🏆 Best Poster Award – 14th International Calreticulin Workshop</p>
-      <p>
-        Saint-Malo, France — <em>“AGR2: A link between ER proteostasis and cancer proliferation”</em>
-      </p>
-      <p class="muted">📅 2023</p>
-    </div>
-    
-    <div class="entry">
-      <p class="entry-title">CIFRE Doctoral Fellowship | ANRT & Thabor Therapeutics</p>
-      <p>
-        Industrial–academic grant supporting a collaborative PhD between an academic research laboratory
-        and a pharmaceutical partner.
-      </p>
-      <p class="muted">📅 2023</p>
-    </div>
-    
-    <div class="entry">
-      <p class="entry-title">Erasmus+ Mobility Scholarship | European Commission</p>
-      <p>
-        Awarded for a full academic year of international study at the University of Galway, Ireland.
-      </p>
-      <p class="muted">📅 2020</p>
-    </div>
+    <!-- FUNDING & AWARDS (collapsed by default) -->
+    <details class="accordion">
+      <summary id="funding">💰 Funding &amp; Awards</summary>
+      <div class="accordion-body">
+
+        <div class="entry">
+          <p class="entry-title">FEBS Travel Grant | Federation of European Biochemical Societies</p>
+          <p>Awarded to attend and present research at the FEBS-IUBMB-ENABLE conference, Glasgow, UK.</p>
+          <p class="muted">📅 2025</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title">🏆 Best Poster Award – 14th International Calreticulin Workshop</p>
+          <p>Saint-Malo, France — <em>“AGR2: A link between ER proteostasis and cancer proliferation”</em></p>
+          <p class="muted">📅 2023</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title">CIFRE Doctoral Fellowship | ANRT &amp; Thabor Therapeutics</p>
+          <p>Industrial–academic grant supporting a collaborative PhD between an academic research laboratory and a pharmaceutical partner.</p>
+          <p class="muted">📅 2023</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title">Erasmus+ Mobility Scholarship | European Commission</p>
+          <p>Awarded for a full academic year of international study at the University of Galway, Ireland.</p>
+          <p class="muted">📅 2020</p>
+        </div>
+
+      </div>
+    </details>
 
     <hr>
 
     <!-- PUBLICATIONS -->
-    <h2>📚 Publications</h2>
+    <h2 id="pubs">📚 Publications</h2>
     <ul>
       <li>📄 <a href="https://doi.org/10.1089/ars.2024.0561">Modulation of PDI Functions by Localization: The Example of the Anterior Gradient Family</a></li>
       <li>📄 <a href="https://doi.org/10.1111/jcmm.17840">Endoplasmic Reticulum Homeostasis—From Molecules to Organisms: Report on the 14th International Calreticulin Workshop</a></li>
@@ -287,119 +386,113 @@
 
     <hr>
 
-    <!-- CONFERENCES -->
-    <h2>Conferences</h2>
+    <!-- CONFERENCES (collapsed by default) -->
+    <details class="accordion">
+      <summary id="conf">Conferences</summary>
+      <div class="accordion-body">
 
-    <div class="two-columns">
-    
-      <div class="column">
-        <h3>🗣️ Oral Communications</h3>
-        <ul>
-          <li>
-            <strong>3rd Bordeaux Cancer Research Meeting</strong>, Bordeaux, France – October 2024<br>
-            <em>“Endoplasmic Reticulum Proteostasis in High Grade Serous Ovarian Cancer”</em>
-          </li>
-          <li>
-            <strong>ENLIGHT Congress</strong>, Bordeaux, France – September 2023<br>
-            <em>“AGR2 & Gynecological cancers”</em>
-          </li>
-        </ul>
+        <div class="two-columns">
+          <div class="column">
+            <h3>🗣️ Oral Communications</h3>
+            <ul>
+              <li>
+                <strong>3rd Bordeaux Cancer Research Meeting</strong>, Bordeaux, France – October 2024<br>
+                <em>“Endoplasmic Reticulum Proteostasis in High Grade Serous Ovarian Cancer”</em>
+              </li>
+              <li>
+                <strong>ENLIGHT Congress</strong>, Bordeaux, France – September 2023<br>
+                <em>“AGR2 &amp; Gynecological cancers”</em>
+              </li>
+            </ul>
+          </div>
+
+          <div class="column">
+            <h3>📌 Poster Presentations</h3>
+            <ul>
+              <li>5th Endoplasmic Reticulum International Symposium, Paris – October 2025</li>
+              <li>FEBS-IUBMB-ENABLE Conference, Glasgow – September 2025 (FEBS Travel Grant)</li>
+              <li>Biological &amp; Medical Sciences Annual Day, Bordeaux – December 2024</li>
+              <li>Biological &amp; Medical Sciences Annual Day, Bordeaux – December 2023</li>
+              <li>
+                <strong>14th International Calreticulin Workshop</strong>, Saint-Malo – May 2023<br>
+                🏆 <strong>Awarded Best Poster</strong>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="center small-gap">
+          <img src="Picture gitbub_conf_bis.png" alt="Poster Image" width="900" />
+        </div>
+
       </div>
-    
-      <div class="column">
-        <h3>📌 Poster Presentations</h3>
-        <ul>
-          <li>5th Endoplasmic Reticulum International Symposium, Paris – October 2025</li>
-          <li>FEBS-IUBMB-ENABLE Conference, Glasgow – September 2025 (FEBS Travel Grant)</li>
-          <li>Biological & Medical Sciences Annual Day, Bordeaux – December 2024</li>
-          <li>Biological & Medical Sciences Annual Day, Bordeaux – December 2023</li>
-          <li>
-            <strong>14th International Calreticulin Workshop</strong>, Saint-Malo – May 2023<br>
-            🏆 <strong>Awarded Best Poster</strong>
-          </li>
-        </ul>
+    </details>
+
+    <!-- TEACHING (collapsed by default) -->
+    <details class="accordion">
+      <summary id="teach">🎓 Teaching &amp; Mentorship</summary>
+      <div class="accordion-body">
+
+        <div class="entry">
+          <p class="entry-title">Mentor – International Internship Exchange Program</p>
+          <p>Mentorship of an international pharmacy student during a research internship.</p>
+          <p class="muted">📅 June–July 2025</p>
+        </div>
+
+        <div class="entry">
+          <p class="entry-title">Guest Lecturer – Metastatic Dissemination</p>
+          <p>Lecture delivered in the 5th-year Pharmacy Program, University of Bordeaux.</p>
+          <p class="muted">📅 December 2024</p>
+        </div>
+
       </div>
-    
-    </div>
+    </details>
 
+    <!-- EDUCATION (collapsed by default) -->
+    <details class="accordion">
+      <summary id="edu">🏫 Education</summary>
+      <div class="accordion-body">
 
-    <div class="center small-gap">
-      <img src="Picture gitbub_conf_bis.png" alt="Poster Image" width="900" />
-    </div>
+        <div class="education-layout">
+          <div class="education-text">
+
+            <div class="entry">
+              <p class="entry-title">PhD in Cancer Biology</p>
+              <p class="muted">📍 University of Bordeaux, France — 📅 2023–2026</p>
+            </div>
+
+            <div class="entry">
+              <p class="entry-title">Master’s Degree in Physiology, Epigenetics, Differentiation and Cancer</p>
+              <p class="muted">📍 University of Grenoble Alpes, France — 📅 2020–2022</p>
+              <p>🔗 <a href="https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-biologie-IAQKB0GE/parcours-physiology-epigenetics-differentiation-and-cancer-2e-annee-IBAVFFMU.html">Master Program</a></p>
+            </div>
+
+            <div class="entry">
+              <p class="entry-title">Bachelor’s Degree in Cellular Biology, Genetics, Microbiology, Animal Physiology</p>
+              <p class="muted">📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland — 📅 2017–2020</p>
+              <p>🔗 <a href="https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462">Bachelor Program</a></p>
+            </div>
+
+          </div>
+
+          <div class="education-image">
+            <img src="Study&internships.png" alt="Map of academic journey">
+          </div>
+        </div>
+
+      </div>
+    </details>
 
     <hr>
-
-    <!-- TEACHING & MENTORSHIP -->
-    <h2>🎓 Teaching & Mentorship</h2>
-    
-    <div class="entry">
-      <p class="entry-title">
-        Mentor – International Internship Exchange Program
-      </p>
-      <p>
-        Mentorship of an international pharmacy student during a research internship.
-      </p>
-      <p class="muted">📅 June–July 2025</p>
-    </div>
-    
-    <div class="entry">
-      <p class="entry-title">
-        Guest Lecturer – Metastatic Dissemination
-      </p>
-      <p>
-        Lecture delivered in the 5th-year Pharmacy Program, University of Bordeaux.
-      </p>
-      <p class="muted">📅 December 2024</p>
-    </div>
-
-
-   <!-- EDUCATION -->
-    <h2>🏫 Education</h2>
-    
-    <div class="education-layout">
-    
-      <!-- LEFT: TEXT -->
-      <div class="education-text">
-    
-        <div class="entry">
-          <p class="entry-title">PhD in Cancer Biology</p>
-          <p class="muted">📍 University of Bordeaux, France — 📅 2023–2026</p>
-        </div>
-    
-        <div class="entry">
-          <p class="entry-title">Master’s Degree in Physiology, Epigenetics, Differentiation and Cancer</p>
-          <p class="muted">📍 University of Grenoble Alpes, France — 📅 2020–2022</p>
-          <p>🔗 <a href="https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-biologie-IAQKB0GE/parcours-physiology-epigenetics-differentiation-and-cancer-2e-annee-IBAVFFMU.html">Master Program</a></p>
-        </div>
-    
-        <div class="entry">
-          <p class="entry-title">Bachelor’s Degree in Cellular Biology, Genetics, Microbiology, Animal Physiology</p>
-          <p class="muted">📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland — 📅 2017–2020</p>
-          <p>🔗 <a href="https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462">Bachelor Program</a></p>
-        </div>
-    
-      </div>
-    
-      <!-- RIGHT: IMAGE -->
-      <div class="education-image">
-        <img src="Study&internships.png" alt="Map of academic journey">
-      </div>
-    
-    </div>
-    
-    <hr>
-
 
     <!-- BEYOND RESEARCH -->
-    <h2>🤝 Beyond Research: Professional &amp; Volunteering Work</h2>
-    <p>
-      Discover some of my previous professional and volunteering experiences <a href="others_experiences.md">here.</a>
-    </p>
+    <h2 id="beyond">🤝 Beyond Research: Professional &amp; Volunteering Work</h2>
+    <p>Discover some of my previous professional and volunteering experiences <a href="others_experiences.md">here.</a></p>
 
     <hr>
 
     <!-- CONTACT -->
-    <h2>📫 Let’s Get in Contact</h2>
+    <h2 id="contact">📫 Let’s Get in Contact</h2>
     <ul>
       <li>📧 <a href="mailto:marianne.guilbard@gmail.com">Email Me</a></li>
       <li>🔗 <a href="https://scholar.google.com/citations?user=8LgCwdwAAAAJ&hl=fr">Google Scholar</a></li>
@@ -412,5 +505,8 @@
     </p>
 
   </div>
+
+  <a class="backtotop" href="#top">↑ Top</a>
+
 </body>
 </html>
