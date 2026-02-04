@@ -7,135 +7,153 @@
   <title>Marianne Guilbard</title>
 
   <style>
-    :root{
-      --bg:#0d1117;
-      --panel:#0d1117;
-      --text:#c9d1d9;
-      --muted:#8b949e;
-      --line:#30363d;
-      --link:#58a6ff;
-    }
+  :root{
+    --bg:#0d1117;
+    --panel:#0d1117;
+    --text:#c9d1d9;
+    --muted:#8b949e;
+    --line:#30363d;
+    --link:#58a6ff;
+  }
 
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background:var(--bg);
-      color:var(--text);
-    }
+  *{ box-sizing:border-box; }
 
-    .container{
-      max-width: 1050px;
-      margin: 0 auto;
-      padding: 42px 20px 70px;
-    }
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+  }
 
-    a{ color:var(--link); text-decoration:none; }
-    a:hover{ text-decoration:underline; }
+  .container{
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 42px 20px 70px;
+  }
 
-    hr{
-      border:none;
-      border-top:1px solid var(--line);
-      margin: 34px 0;
-    }
+  a{ color:var(--link); text-decoration:none; }
+  a:hover{ text-decoration:underline; }
 
-    /* Header layout */
+  hr{
+    border:none;
+    border-top:1px solid var(--line);
+    margin: 34px 0;
+  }
+
+  /* ===== HEADER ===== */
+  .header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:36px;
+    margin-bottom: 10px;
+  }
+
+  .header-text{
+    flex:1;
+    text-align:center;
+    padding: 0 10px;
+  }
+
+  .header-text h1{
+    margin:0;
+    font-size: 44px;
+    letter-spacing: -0.5px;
+  }
+
+  .header-text p{
+    margin: 12px 0 0;
+    font-size: 18px;
+  }
+
+  .header-photo img{
+    width: 280px;
+    border-radius: 12px;
+    display:block;
+  }
+
+  /* ===== SECTIONS ===== */
+  h2{
+    margin: 0 0 12px;
+    font-size: 26px;
+    letter-spacing: -0.2px;
+  }
+
+  h3{
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+
+  p{
+    line-height: 1.65;
+    margin: 0 0 14px;
+  }
+
+  .justify{ text-align: justify; }
+
+  ul{
+    margin: 8px 0 0 18px;
+    padding: 0;
+    line-height:1.65;
+  }
+
+  /* ===== ENTRIES / CARDS ===== */
+  .entry{
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    margin: 12px 0;
+    background: rgba(255,255,255,0.02);
+  }
+
+  .entry-title{
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+
+  .muted{ color: var(--muted); }
+
+  /* ===== CENTERED IMAGES ===== */
+  .center{
+    text-align:center;
+  }
+
+  .center img{
+    max-width: 100%;
+    height:auto;
+  }
+
+  .small-gap{ margin-top: 12px; }
+
+  /* ===== TWO-COLUMN CONFERENCES ===== */
+  .two-columns{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:32px;
+    margin-top:20px;
+  }
+
+  .column ul{
+    padding-left:18px;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 860px){
     .header{
-      display:flex;
-      align-items:center;          /* vertical centering */
-      justify-content:space-between;
-      gap:36px;
-      margin-bottom: 10px;
-    }
-
-    .header-text{
-      flex:1;
-      text-align:center;           /* keep your centered text */
-      padding: 0 10px;
-    }
-
-    .header-text h1{
-      margin:0;
-      font-size: 44px;
-      letter-spacing: -0.5px;
-    }
-
-    .header-text p{
-      margin: 12px 0 0;
-      font-size: 18px;
-      color: var(--text);
-    }
-
-    .header-photo img{
-      width: 280px;                /* change here if needed */
-      border-radius: 12px;
-      display:block;
-    }
-
-    /* Section titles */
-    h2{
-      margin: 0 0 12px;
-      font-size: 26px;
-      letter-spacing: -0.2px;
-    }
-
-    /* Body text */
-    p{
-      line-height: 1.65;
-      margin: 0 0 14px;
-    }
-
-    .justify{ text-align: justify; }
-
-    /* Lists */
-    ul{
-      margin: 8px 0 0 18px;
-      padding: 0;
-      line-height:1.65;
-    }
-
-    .block{
-      margin-top: 10px;
-    }
-
-    .small-gap{ margin-top: 10px; }
-
-    /* Centered images */
-    .center{
+      flex-direction: column;
       text-align:center;
     }
-
-    .center img{
-      max-width: 100%;
-      height:auto;
+    .header-photo img{
+      width: 240px;
     }
+  }
 
-    /* Cards for entries (optional but looks clean) */
-    .entry{
-      padding: 14px 16px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      margin: 12px 0;
-      background: rgba(255,255,255,0.02);
+  @media (max-width: 800px){
+    .two-columns{
+      grid-template-columns: 1fr;
     }
-
-    .entry-title{
-      font-weight: 700;
-      margin: 0 0 6px;
-    }
-
-    .muted{ color: var(--muted); }
-
-    /* Responsive */
-    @media (max-width: 860px){
-      .header{
-        flex-direction: column;
-        text-align:center;
-      }
-      .header-text{ padding: 0; }
-      .header-photo img{ width: 240px; }
-    }
-  </style>
+  }
+</style>
 </head>
 
 <body>
@@ -207,26 +225,40 @@
     <hr>
 
     <!-- CONFERENCES -->
-    <h2>Conferences</h2>
+<h2>Conferences</h2>
 
-    <div class="block">
-      <p class="entry-title">🗣️ Oral Communications</p>
-      <ul>
-        <li>3rd Bordeaux Cancer Research Meeting, Bordeaux, France – October 2024 – “Endoplasmic Reticulum Proteostasis in High Grade Serous Ovarian Cancer”</li>
-        <li>ENLIGHT Congress, Bordeaux, France – September 2023 – “AGR2 &amp; Gynecological cancers”</li>
-      </ul>
-    </div>
+<div class="two-columns">
 
-    <div class="block">
-      <p class="entry-title">📌 Poster Presentations</p>
-      <ul>
-        <li>5th Endoplasmic Reticulum International Symposium, Paris, France – October 2025</li>
-        <li>FEBS-IUBMB-ENABLE conference “Bridging Minds Interdisciplinary research for the future of life sciences”, Glasgow, UK – September 2025 (FEBS Travel grant)</li>
-        <li>Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2024</li>
-        <li>Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2023</li>
-        <li>14th International Calreticulin Workshop, Saint-Malo, France – May 2023 – “AGR2: A link between ER proteostasis and cancer proliferation”, 🏆 Awarded Best Poster</li>
-      </ul>
-    </div>
+  <div class="column">
+    <h3>🗣️ Oral Communications</h3>
+    <ul>
+      <li>
+        <strong>3rd Bordeaux Cancer Research Meeting</strong>, Bordeaux, France – October 2024<br>
+        <em>“Endoplasmic Reticulum Proteostasis in High Grade Serous Ovarian Cancer”</em>
+      </li>
+      <li>
+        <strong>ENLIGHT Congress</strong>, Bordeaux, France – September 2023<br>
+        <em>“AGR2 & Gynecological cancers”</em>
+      </li>
+    </ul>
+  </div>
+
+  <div class="column">
+    <h3>📌 Poster Presentations</h3>
+    <ul>
+      <li>5th Endoplasmic Reticulum International Symposium, Paris – October 2025</li>
+      <li>FEBS-IUBMB-ENABLE Conference, Glasgow – September 2025 (FEBS Travel Grant)</li>
+      <li>Biological & Medical Sciences Annual Day, Bordeaux – December 2024</li>
+      <li>Biological & Medical Sciences Annual Day, Bordeaux – December 2023</li>
+      <li>
+        <strong>14th International Calreticulin Workshop</strong>, Saint-Malo – May 2023<br>
+        🏆 <strong>Awarded Best Poster</strong>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
 
     <div class="center small-gap">
       <img src="Picture gitbub_conf_bis.png" alt="Poster Image" width="900" />
