@@ -1,1 +1,286 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marianne Guilbard</title>
+
+  <style>
+    :root{
+      --bg:#0d1117;
+      --panel:#0d1117;
+      --text:#c9d1d9;
+      --muted:#8b949e;
+      --line:#30363d;
+      --link:#58a6ff;
+    }
+
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    .container{
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 42px 20px 70px;
+    }
+
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    hr{
+      border:none;
+      border-top:1px solid var(--line);
+      margin: 34px 0;
+    }
+
+    /* Header layout */
+    .header{
+      display:flex;
+      align-items:center;          /* vertical centering */
+      justify-content:space-between;
+      gap:36px;
+      margin-bottom: 10px;
+    }
+
+    .header-text{
+      flex:1;
+      text-align:center;           /* keep your centered text */
+      padding: 0 10px;
+    }
+
+    .header-text h1{
+      margin:0;
+      font-size: 44px;
+      letter-spacing: -0.5px;
+    }
+
+    .header-text p{
+      margin: 12px 0 0;
+      font-size: 18px;
+      color: var(--text);
+    }
+
+    .header-photo img{
+      width: 280px;                /* change here if needed */
+      border-radius: 12px;
+      display:block;
+    }
+
+    /* Section titles */
+    h2{
+      margin: 0 0 12px;
+      font-size: 26px;
+      letter-spacing: -0.2px;
+    }
+
+    /* Body text */
+    p{
+      line-height: 1.65;
+      margin: 0 0 14px;
+    }
+
+    .justify{ text-align: justify; }
+
+    /* Lists */
+    ul{
+      margin: 8px 0 0 18px;
+      padding: 0;
+      line-height:1.65;
+    }
+
+    .block{
+      margin-top: 10px;
+    }
+
+    .small-gap{ margin-top: 10px; }
+
+    /* Centered images */
+    .center{
+      text-align:center;
+    }
+
+    .center img{
+      max-width: 100%;
+      height:auto;
+    }
+
+    /* Cards for entries (optional but looks clean) */
+    .entry{
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      margin: 12px 0;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .entry-title{
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    .muted{ color: var(--muted); }
+
+    /* Responsive */
+    @media (max-width: 860px){
+      .header{
+        flex-direction: column;
+        text-align:center;
+      }
+      .header-text{ padding: 0; }
+      .header-photo img{ width: 240px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-text">
+        <h1>👩‍🔬 Marianne Guilbard</h1>
+        <p>Welcome to my research page! You can find details about my work and projects.</p>
+      </div>
+
+      <div class="header-photo">
+        <img src="marianne-guilbard-8.jpg" alt="Marianne Guilbard" />
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- ABOUT ME -->
+    <h2>🧬 About Me</h2>
+    <p class="justify">
+      Passionate about cancer biology, I am particularly drawn to exploring the phenotypic plasticity of tumor cells, including processes such as migration, metastasis, and epithelial–mesenchymal transition.
+      More broadly, I am interested in research that bridges fundamental mechanisms with translational perspectives to advance our understanding of cancer progression.
+      I am currently looking for postdoctoral opportunities to broaden my research experience, take on new scientific challenges, and collaborate with inspiring teams.
+    </p>
+
+    <hr>
+
+    <!-- RESEARCH EXPERIENCE -->
+    <h2>🔬 Research Experience</h2>
+
+    <div class="entry">
+      <div class="entry-title">🎓 PhD Position – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></div>
+      <ul>
+        <li>🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a></li>
+        <li>👨‍🏫 Supervisor: Dr. Frédéric Delom – <a href="https://www.researchgate.net/profile/Frederic-Delom">ResearchGate</a></li>
+        <li>🔍 Learn more about the project: Compartmentalized functions of AGR2 in cancer progression</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-title">🧫 Master 2 Internship – University of Bordeaux, <a href="https://www.bricbordeaux.com/">BRIC</a></div>
+      <ul>
+        <li>🧪 Research team: <a href="https://www.bricbordeaux.com/bric-team/reprogrammation-de-lactivite-tumorale-et-du-microenvironnement-associe-rytme/">Reprogramming of Tumor Activity and the Associated Microenvironment</a></li>
+        <li>👨‍🏫 Supervisor: Dr. Frédéric Delom – <a href="https://www.researchgate.net/profile/Frederic-Delom">ResearchGate</a></li>
+        <li>🔍 Learn more about the project: <a href="M2_internship.md">Impact of AGR2 on senescence in breast cancer cells</a></li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-title">🧫 Master 1 Internship – University of Grenoble Alpes, <a href="https://iab-grenoble.fr/">IAB</a></div>
+      <ul>
+        <li>🧪 Research team: <a href="https://iab-grenoble.fr/en/recherche/equipes/dynamique-de-la-methylation-des-proteines-dans-le-cancer/">Protein methylation dynamics in cancer</a></li>
+        <li>👨‍🏫 Supervisor: Dr. Nicolas Reynoird – <a href="https://www.researchgate.net/profile/Nicolas-Reynoird-2">ResearchGate</a></li>
+        <li>🔍 Learn more about the project: <a href="M1_internship.md">Lysine methylation-based signaling in triple-negative breast cancer</a></li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <!-- PUBLICATIONS -->
+    <h2>📚 Publications</h2>
+    <ul>
+      <li>📄 <a href="https://doi.org/10.1089/ars.2024.0561">Modulation of PDI Functions by Localization: The Example of the Anterior Gradient Family</a></li>
+      <li>📄 <a href="https://doi.org/10.1111/jcmm.17840">Endoplasmic Reticulum Homeostasis—From Molecules to Organisms: Report on the 14th International Calreticulin Workshop</a></li>
+    </ul>
+
+    <hr>
+
+    <!-- CONFERENCES -->
+    <h2>Conferences</h2>
+
+    <div class="block">
+      <p class="entry-title">🗣️ Oral Communications</p>
+      <ul>
+        <li>3rd Bordeaux Cancer Research Meeting, Bordeaux, France – October 2024 – “Endoplasmic Reticulum Proteostasis in High Grade Serous Ovarian Cancer”</li>
+        <li>ENLIGHT Congress, Bordeaux, France – September 2023 – “AGR2 &amp; Gynecological cancers”</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <p class="entry-title">📌 Poster Presentations</p>
+      <ul>
+        <li>5th Endoplasmic Reticulum International Symposium, Paris, France – October 2025</li>
+        <li>FEBS-IUBMB-ENABLE conference “Bridging Minds Interdisciplinary research for the future of life sciences”, Glasgow, UK – September 2025 (FEBS Travel grant)</li>
+        <li>Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2024</li>
+        <li>Biological and Medical Sciences Department Annual Day, Bordeaux, France – December 2023</li>
+        <li>14th International Calreticulin Workshop, Saint-Malo, France – May 2023 – “AGR2: A link between ER proteostasis and cancer proliferation”, 🏆 Awarded Best Poster</li>
+      </ul>
+    </div>
+
+    <div class="center small-gap">
+      <img src="Picture gitbub_conf_bis.png" alt="Poster Image" width="900" />
+    </div>
+
+    <hr>
+
+    <!-- EDUCATION -->
+    <h2>🏫 Education</h2>
+
+    <div class="entry">
+      <p class="entry-title">PhD in Cancer Biology</p>
+      <p class="muted">📍 University of Bordeaux, France — 📅 2023–2026</p>
+    </div>
+
+    <div class="entry">
+      <p class="entry-title">Master’s Degree in Physiology, Epigenetics, Differentiation and Cancer</p>
+      <p class="muted">📍 University of Grenoble Alpes, France — 📅 2020–2022</p>
+      <p>🔗 <a href="https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/master-XB/master-biologie-IAQKB0GE/parcours-physiology-epigenetics-differentiation-and-cancer-2e-annee-IBAVFFMU.html">Master Program</a></p>
+    </div>
+
+    <div class="entry">
+      <p class="entry-title">Bachelor’s Degree in Cellular Biology, Genetics, Microbiology, Animal Physiology</p>
+      <p class="muted">📍 University of Rennes 1, France / Erasmus+ – Galway University, Ireland — 📅 2017–2020</p>
+      <p>🔗 <a href="https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462">Bachelor Program</a></p>
+    </div>
+
+    <div class="center small-gap">
+      <img src="Study&internships.png" width="400" alt="Map of academic journey" />
+    </div>
+
+    <hr>
+
+    <!-- BEYOND RESEARCH -->
+    <h2>🤝 Beyond Research: Professional &amp; Volunteering Work</h2>
+    <p>
+      Discover some of my previous professional and volunteering experiences <a href="others_experiences.md">here.</a>
+    </p>
+
+    <hr>
+
+    <!-- CONTACT -->
+    <h2>📫 Let’s Get in Contact</h2>
+    <ul>
+      <li>📧 <a href="mailto:marianne.guilbard@gmail.com">Email Me</a></li>
+      <li>🔗 <a href="https://scholar.google.com/citations?user=8LgCwdwAAAAJ&hl=fr">Google Scholar</a></li>
+      <li>🔗 <a href="https://www.researchgate.net/profile/Marianne-Guilbard">ResearchGate</a></li>
+    </ul>
+
+    <p class="center small-gap">
+      Looking forward to exciting collaborations and new research adventures! 🚀<br>
+      Let’s connect!
+    </p>
+
+  </div>
+</body>
+</html>
