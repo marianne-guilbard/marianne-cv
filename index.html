@@ -113,6 +113,31 @@
 
   .muted{ color: var(--muted); }
 
+    /* Education layout */
+.education-layout{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  align-items: start;
+  margin-top: 16px;
+}
+
+.education-image img{
+  width: 400px;        /* adjust if needed */
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Stack on mobile */
+@media (max-width: 900px){
+  .education-layout{
+    grid-template-columns: 1fr;
+  }
+  .education-image{
+    text-align: center;
+  }
+}
+
   /* ===== CENTERED IMAGES ===== */
   .center{
     text-align:center;
@@ -225,39 +250,39 @@
     <hr>
 
     <!-- CONFERENCES -->
-<h2>Conferences</h2>
+    <h2>Conferences</h2>
 
-<div class="two-columns">
-
-  <div class="column">
-    <h3>🗣️ Oral Communications</h3>
-    <ul>
-      <li>
-        <strong>3rd Bordeaux Cancer Research Meeting</strong>, Bordeaux, France – October 2024<br>
-        <em>“Endoplasmic Reticulum Proteostasis in High Grade Serous Ovarian Cancer”</em>
-      </li>
-      <li>
-        <strong>ENLIGHT Congress</strong>, Bordeaux, France – September 2023<br>
-        <em>“AGR2 & Gynecological cancers”</em>
-      </li>
-    </ul>
-  </div>
-
-  <div class="column">
-    <h3>📌 Poster Presentations</h3>
-    <ul>
-      <li>5th Endoplasmic Reticulum International Symposium, Paris – October 2025</li>
-      <li>FEBS-IUBMB-ENABLE Conference, Glasgow – September 2025 (FEBS Travel Grant)</li>
-      <li>Biological & Medical Sciences Annual Day, Bordeaux – December 2024</li>
-      <li>Biological & Medical Sciences Annual Day, Bordeaux – December 2023</li>
-      <li>
-        <strong>14th International Calreticulin Workshop</strong>, Saint-Malo – May 2023<br>
-        🏆 <strong>Awarded Best Poster</strong>
-      </li>
-    </ul>
-  </div>
-
-</div>
+    <div class="two-columns">
+    
+      <div class="column">
+        <h3>🗣️ Oral Communications</h3>
+        <ul>
+          <li>
+            <strong>3rd Bordeaux Cancer Research Meeting</strong>, Bordeaux, France – October 2024<br>
+            <em>“Endoplasmic Reticulum Proteostasis in High Grade Serous Ovarian Cancer”</em>
+          </li>
+          <li>
+            <strong>ENLIGHT Congress</strong>, Bordeaux, France – September 2023<br>
+            <em>“AGR2 & Gynecological cancers”</em>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="column">
+        <h3>📌 Poster Presentations</h3>
+        <ul>
+          <li>5th Endoplasmic Reticulum International Symposium, Paris – October 2025</li>
+          <li>FEBS-IUBMB-ENABLE Conference, Glasgow – September 2025 (FEBS Travel Grant)</li>
+          <li>Biological & Medical Sciences Annual Day, Bordeaux – December 2024</li>
+          <li>Biological & Medical Sciences Annual Day, Bordeaux – December 2023</li>
+          <li>
+            <strong>14th International Calreticulin Workshop</strong>, Saint-Malo – May 2023<br>
+            🏆 <strong>Awarded Best Poster</strong>
+          </li>
+        </ul>
+      </div>
+    
+    </div>
 
 
     <div class="center small-gap">
@@ -267,7 +292,13 @@
     <hr>
 
     <!-- EDUCATION -->
-    <h2>🏫 Education</h2>
+   <!-- EDUCATION -->
+<h2>🏫 Education</h2>
+
+<div class="education-layout">
+
+  <!-- LEFT: TEXT -->
+  <div class="education-text">
 
     <div class="entry">
       <p class="entry-title">PhD in Cancer Biology</p>
@@ -286,11 +317,17 @@
       <p>🔗 <a href="https://sve.univ-rennes.fr/undergraduate-exchange-program-molecular-and-cellular-biology-and-physiology#p-462">Bachelor Program</a></p>
     </div>
 
-    <div class="center small-gap">
-      <img src="Study&internships.png" width="400" alt="Map of academic journey" />
-    </div>
+  </div>
 
-    <hr>
+  <!-- RIGHT: IMAGE -->
+  <div class="education-image">
+    <img src="Study&internships.png" alt="Map of academic journey">
+  </div>
+
+</div>
+
+<hr>
+
 
     <!-- BEYOND RESEARCH -->
     <h2>🤝 Beyond Research: Professional &amp; Volunteering Work</h2>
