@@ -92,6 +92,29 @@
       background: rgba(255,255,255,0.08);
       text-decoration:none;
     }
+    
+    /* ===== Navigation buttons (shared style with M2 & index) ===== */
+    .nav-btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 32px;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      backdrop-filter: blur(6px);
+    }
+    
+    .nav-btn:hover{
+      background: rgba(255,255,255,0.12);
+      text-decoration: none;
+    }
+
   </style>
 </head>
 
@@ -109,24 +132,17 @@
 
     <h2>🧪 Project Overview</h2>
 
-    <p>
+     <p>
       Breast cancer remains the leading cause of cancer-related death among women worldwide. While early-stage
       interventions targeting the primary tumor have improved, strategies to prevent or treat aggressive breast cancer
       and metastasis remain less effective. Tumor dissemination is a major contributor to mortality in breast cancer
-      patients.
-    </p>
-
-    <p>
-      Dr. Reynoird’s team observed that BCAR3 methylation by the lysine methyltransferase SMYD2 enhances cancer cell
-      migration and invasiveness. Their work demonstrated that SMYD2 contributes to breast cancer metastasis and that
-      BCAR3 methylation facilitates its interaction with the actin nucleator FMNL3.
-    </p>
-
-    <p>
-      In this project, we investigated the role of BCAR1 in the SMYD2–BCAR3 pathway by assessing whether BCAR1/BCAR3
-      perturbation impacts cytoskeletal remodeling. We found that BCAR1 and BCAR3 are expressed and interact in
-      aggressive breast cancer cell lines. Using specific mutants, we demonstrated that BCAR1 interacts with FMNL3
-      through BCAR3, highlighting the importance of this complex in cytoskeletal dynamics.
+      patients. Dr. Reynoird’s team observed that BCAR3 methylation by the lysine methyltransferase SMYD2 enhances cancer
+      cell migration and invasiveness. Their work demonstrated that SMYD2 contributes to breast cancer metastasis and that
+      BCAR3 methylation facilitates its interaction with the actin nucleator FMNL3. In this project, we investigated the
+      role of BCAR1 in the SMYD2–BCAR3 pathway by assessing whether BCAR1/BCAR3 perturbation impacts cytoskeletal
+      remodeling. We found that BCAR1 and BCAR3 are expressed and interact in aggressive breast cancer cell lines. Using
+      specific mutants, we demonstrated that BCAR1 interacts with FMNL3 through BCAR3, highlighting the importance of
+      this complex in cytoskeletal dynamics.
     </p>
 
     <h2>🧬 Graphical Abstract</h2>
@@ -161,7 +177,7 @@
 
     <hr>
 
-    <a class="btn" href="index.html#research">← Back to main page</a>
+    <a class="nav-btn" href="index.html#research">← Back to main page</a>
 
   </div>
 </body>
