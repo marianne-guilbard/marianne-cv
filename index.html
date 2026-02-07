@@ -670,22 +670,45 @@
 
   <a class="backtotop" href="#top">↑ Top</a>
 
-  <script>
+<script>
   /* ===============================
-     Open accordion from hash links
+     Helpers
+     =============================== */
+  function closeNavMenu() {
+    const menu = document.querySelector(".nav-menu");
+    if (menu) menu.removeAttribute("open");
+  }
+
+  function scrollWithOffset(el, offset = -80) {
+    const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+
+  /* ===============================
+     Open <details> accordion when using hash links
+     e.g. #conf, #pubs, #edu
      =============================== */
   function openAccordionFromHash() {
     const hash = window.location.hash;
     if (!hash) return;
 
     const target = document.querySelector(hash);
-    if (target && target.tagName && target.tagName.toLowerCase() === "details") {
-      target.open = true;
+    if (!target) return;
 
-      // Offset for sticky navbar so the title isn't hidden
-      const yOffset = -80;
-      const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
+    // If the target is a <details> accordion, open it
+    if (target.tagName && target.tagName.toLowerCase() === "details") {
+      target.open = true;
+      closeNavMenu();
+      scrollWithOffset(target, -80);
+      return;
+    }
+
+    // If the hash points to something inside a <details>, open the nearest parent <details>
+    const parentDetails = target.closest("details");
+    if (parentDetails) {
+      parentDetails.open = true;
+      closeNavMenu();
+      scrollWithOffset(parentDetails, -80);
     }
   }
 
@@ -693,24 +716,32 @@
   window.addEventListener("hashchange", openAccordionFromHash);
 
   /* ===============================
-     Mobile nav: auto-close menu
+     Mobile nav: close menu on outside click
      =============================== */
   document.addEventListener("click", function (event) {
     const menu = document.querySelector(".nav-menu");
     if (!menu) return;
 
     if (menu.hasAttribute("open") && !menu.contains(event.target)) {
-      menu.removeAttribute("open");
+      closeNavMenu();
     }
   });
 
+  /* ===============================
+     Close menu when clicking a nav link
+     Then ensure the right accordion opens + scroll offset applies
+     =============================== */
   document.querySelectorAll(".nav-menu a").forEach(link => {
     link.addEventListener("click", () => {
-      const menu = document.querySelector(".nav-menu");
-      if (menu) menu.removeAttribute("open");
+      // Close immediately (nice on mobile)
+      closeNavMenu();
+
+      // Let the hash update happen, then open the right accordion + offset scroll
+      setTimeout(openAccordionFromHash, 0);
     });
   });
 </script>
+
 
 
 </body>
