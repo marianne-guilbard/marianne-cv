@@ -683,17 +683,23 @@
   /* ===============================
      Helpers
      =============================== */
+  const NAV_OFFSET = -80;
+
+  function getNavMenu() {
+    return document.querySelector(".nav-menu");
+  }
+
   function closeNavMenu() {
-    const menu = document.querySelector(".nav-menu");
+    const menu = getNavMenu();
     if (menu) menu.removeAttribute("open");
   }
 
   function openNavMenu() {
-    const menu = document.querySelector(".nav-menu");
+    const menu = getNavMenu();
     if (menu) menu.setAttribute("open", "");
   }
 
-  function scrollWithOffset(el, offset = -80) {
+  function scrollWithOffset(el, offset = NAV_OFFSET) {
     const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
     window.scrollTo({ top: y, behavior: "smooth" });
   }
@@ -709,20 +715,20 @@
     const target = document.querySelector(hash);
     if (!target) return;
 
-    // If the target is a <details> accordion, open it
+    // If the hash points to the <details> itself
     if (target.tagName && target.tagName.toLowerCase() === "details") {
       target.open = true;
       closeNavMenu();
-      requestAnimationFrame(() => scrollWithOffset(target, -80));
+      requestAnimationFrame(() => scrollWithOffset(target));
       return;
     }
 
-    // If the hash points to something inside a <details>, open the nearest parent <details>
+    // If the hash points to something inside a <details>
     const parentDetails = target.closest("details");
     if (parentDetails) {
       parentDetails.open = true;
       closeNavMenu();
-      requestAnimationFrame(() => scrollWithOffset(parentDetails, -80));
+      requestAnimationFrame(() => scrollWithOffset(parentDetails));
     }
   }
 
@@ -730,10 +736,10 @@
   window.addEventListener("hashchange", openAccordionFromHash);
 
   /* ===============================
-     Mobile nav: close menu on outside click
+     Close menu on outside click (mobile + desktop)
      =============================== */
-  document.addEventListener("click", function (event) {
-    const menu = document.querySelector(".nav-menu");
+  document.addEventListener("click", (event) => {
+    const menu = getNavMenu();
     if (!menu) return;
 
     if (menu.hasAttribute("open") && !menu.contains(event.target)) {
@@ -742,43 +748,40 @@
   });
 
   /* ===============================
-     Close menu when clicking a nav link
-     (links are inside .nav-links, not .nav-menu)
+     Close menu when clicking a nav link,
+     then open the right accordion + apply scroll offset
      =============================== */
-  document.querySelectorAll(".nav-links a").forEach(link => {
+  document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", () => {
       closeNavMenu();
+      // Let the hash update happen first
       setTimeout(openAccordionFromHash, 0);
     });
   });
 
   /* ===============================
-     Desktop: open menu on hover
-     (only on devices that actually have hover)
+     Desktop hover behavior:
+     - open when cursor enters the WHOLE menu (button + dropdown)
+     - close when cursor leaves the WHOLE menu
+     Only on real hover devices (not touch)
      =============================== */
-  (function enableHoverMenu(){
-    const menu = document.querySelector(".nav-menu");
+  (function enableHoverMenu() {
+    const menu = getNavMenu();
     if (!menu) return;
 
     const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-    if (!canHover) return; // don't mess with touch devices
+    if (!canHover) return;
 
-    // Open when mouse enters the whole menu area
-    menu.addEventListener("mouseenter", () => {
-      openNavMenu();
-    });
+    menu.addEventListener("mouseenter", () => openNavMenu());
+    menu.addEventListener("mouseleave", () => closeNavMenu());
 
-    // Close when mouse leaves the whole menu area
-    menu.addEventListener("mouseleave", () => {
-      closeNavMenu();
-    });
-
-    // Optional: allow Esc to close
+    // ESC closes menu (nice UX)
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") closeNavMenu();
     });
   })();
 </script>
+  
 
 </body>
 </html>
