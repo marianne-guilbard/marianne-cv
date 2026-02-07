@@ -263,30 +263,112 @@
       grid-template-columns: 1fr;
     }
   }
+
+  /* ===== RESPONSIVE NAV MENU ===== */
+.nav-menu {
+  position: relative;
+}
+
+.nav-menu summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--text);
+  background: rgba(255,255,255,0.03);
+}
+
+.nav-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-links {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: rgba(13,17,23,0.98);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 10px;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.nav-links a {
+  font-size: 13px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: var(--text);
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.06);
+  text-decoration: none;
+}
+
+/* Desktop: show links inline instead */
+@media (min-width: 860px) {
+  .nav-menu summary {
+    display: none;
+  }
+
+  .nav-menu {
+    all: unset;
+  }
+
+  .nav-links {
+    position: static;
+    flex-direction: row;
+    background: none;
+    border: none;
+    padding: 0;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    color: var(--muted);
+  }
+
+  .nav-links a:hover {
+    color: var(--text);
+    background: none;
+  }
+}
+
   </style>
 </head>
 
 <body>
 
-  <!-- Sticky navigation -->
-  <nav class="topnav">
-    <div class="topnav-inner">
-      <a class="brand" href="#top">Marianne Guilbard</a>
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#funding">Funding</a>
-        <a href="#publi">Publi</a>
-        <a href="#conf">Conf</a>
-        <a href="#teach">Teaching</a>
-        <a href="#edu">Education</a>
-        <a href="#beyond">Beyond</a>
-        <a href="#contact">Contact</a>
+    <!-- Sticky navigation -->
+    <nav class="topnav">
+      <div class="topnav-inner">
+        <a class="brand" href="#top">Marianne Guilbard</a>
+    
+        <details class="nav-menu">
+          <summary>☰ Menu</summary>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#funding">Funding</a>
+            <a href="#pubs">Publications</a>
+            <a href="#conf">Conferences</a>
+            <a href="#teach">Teaching</a>
+            <a href="#edu">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </details>
       </div>
-    </div>
-  </nav>
+    </nav>
+    
+    <div class="container" id="top">
 
-  <div class="container" id="top">
 
     <!-- HEADER -->
     <div class="header">
