@@ -275,7 +275,7 @@
     }
   }
 
-  /* ===== RESPONSIVE NAV MENU ===== */
+/* ===== NAV MENU (dropdown on all screen sizes) ===== */
 .nav-menu {
   position: relative;
 }
@@ -290,12 +290,14 @@
   border-radius: 10px;
   color: var(--text);
   background: rgba(255,255,255,0.03);
+  user-select: none;
 }
 
 .nav-menu summary::-webkit-details-marker {
   display: none;
 }
 
+/* Dropdown panel */
 .nav-links {
   position: absolute;
   right: 0;
@@ -307,15 +309,22 @@
   border: 1px solid var(--line);
   border-radius: 14px;
   padding: 10px;
-  min-width: 180px;
-  z-index: 1000;
+  min-width: 200px;
+  z-index: 2000;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+
+/* Hide dropdown when <details> is closed */
+.nav-menu:not([open]) .nav-links {
+  display: none;
 }
 
 .nav-links a {
   font-size: 13px;
-  padding: 6px 10px;
-  border-radius: 8px;
+  padding: 8px 10px;
+  border-radius: 10px;
   color: var(--text);
+  text-decoration: none;
 }
 
 .nav-links a:hover {
@@ -323,34 +332,15 @@
   text-decoration: none;
 }
 
-/* Desktop: show links inline instead */
-@media (min-width: 860px) {
-  .nav-menu summary {
-    display: none;
-  }
-
-  .nav-menu {
-    all: unset;
-  }
-
+/* Small screens: prevent dropdown going off-screen */
+@media (max-width: 420px) {
   .nav-links {
-    position: static;
-    flex-direction: row;
-    background: none;
-    border: none;
-    padding: 0;
-    gap: 10px;
-  }
-
-  .nav-links a {
-    color: var(--muted);
-  }
-
-  .nav-links a:hover {
-    color: var(--text);
-    background: none;
+    right: 0;
+    left: auto;
+    min-width: 170px;
   }
 }
+
 
   </style>
 </head>
