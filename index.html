@@ -199,23 +199,36 @@
   /* ===== EDUCATION LAYOUT ===== */
   .education-layout{
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr; /* image first, then text */
     gap: 32px;
     align-items: start;
     margin-top: 16px;
   }
-
+  
+  .education-image{
+    display: flex;
+    justify-content: center;
+  }
+  
   .education-image img{
     width: 400px;
     max-width: 100%;
     border-radius: 12px;
-    display:block;
+    display: block;
+  }
+  
+  /* Stack + center image on smaller screens */
+  @media (max-width: 900px){
+    .education-layout{
+      grid-template-columns: 1fr;
+    }
+  
+    .education-image{
+      justify-content: center;
+      margin-bottom: 20px;
+    }
   }
 
-  @media (max-width: 900px){
-    .education-layout{ grid-template-columns: 1fr; }
-    .education-image{ text-align: center; }
-  }
 
   /* ===== ACCORDIONS ===== */
   .accordion{
