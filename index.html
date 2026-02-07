@@ -61,6 +61,11 @@
     gap: 16px;
   }
 
+  .topnav,
+  .topnav-inner {
+    overflow: visible;
+  }
+
   .brand{
     font-weight: 800;
     color: var(--text);
@@ -679,7 +684,7 @@
 
   <a class="backtotop" href="#top">↑ Top</a>
 
-<script>
+  <script>
   /* ===============================
      Helpers
      =============================== */
@@ -706,7 +711,6 @@
 
   /* ===============================
      Open <details> accordion when using hash links
-     e.g. #conf, #pubs, #edu
      =============================== */
   function openAccordionFromHash() {
     const hash = window.location.hash;
@@ -754,16 +758,12 @@
   document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", () => {
       closeNavMenu();
-      // Let the hash update happen first
       setTimeout(openAccordionFromHash, 0);
     });
   });
 
   /* ===============================
-     Desktop hover behavior:
-     - open when cursor enters the WHOLE menu (button + dropdown)
-     - close when cursor leaves the WHOLE menu
-     Only on real hover devices (not touch)
+     Desktop hover behavior (delayed close)
      =============================== */
   (function enableHoverMenu() {
     const menu = getNavMenu();
@@ -772,16 +772,32 @@
     const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
     if (!canHover) return;
 
-    menu.addEventListener("mouseenter", () => openNavMenu());
-    menu.addEventListener("mouseleave", () => closeNavMenu());
+    let closeTimer = null;
 
-    // ESC closes menu (nice UX)
+    function scheduleClose() {
+      clearTimeout(closeTimer);
+      closeTimer = setTimeout(() => closeNavMenu(), 220);
+    }
+
+    function cancelClose() {
+      clearTimeout(closeTimer);
+      closeTimer = null;
+    }
+
+    menu.addEventListener("mouseenter", () => {
+      cancelClose();
+      openNavMenu();
+    });
+
+    menu.addEventListener("mouseleave", () => {
+      scheduleClose();
+    });
+
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") closeNavMenu();
     });
   })();
 </script>
-  
 
 </body>
 </html>
