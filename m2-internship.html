@@ -92,6 +92,29 @@
       background: rgba(255,255,255,0.08);
       text-decoration:none;
     }
+
+    /* ===== TRANSLUCENT ACTION BUTTON (shared style) ===== */
+    .action-btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(6px);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+    
+    .action-btn:hover{
+      background: rgba(255,255,255,0.12);
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
   </style>
 </head>
 
@@ -110,22 +133,7 @@
     <h2>🧪 Project Overview</h2>
 
     <p>
-      The endoplasmic reticulum–resident protein AGR2 (Anterior Gradient 2), a member of the protein disulfide isomerase (PDI) family, is frequently overexpressed in breast cancer and implicated in tumor growth, invasion, and metastasis.
-      Beyond its intracellular functions, AGR2 is secreted into the tumor microenvironment as extracellular AGR2 (eAGR2), where it acts as a pro-oncogenic factor.
-    </p>
-
-    <p>
-      Previous work from our team revealed that inhibition of AGR2 expression in lung cancer cells induces a senescent phenotype.
-      Building on these findings, this project aimed to investigate the role of AGR2 in therapy-induced senescence (TIS) in breast cancer cells.
-    </p>
-
-    <p>
-      We show that TIS induces proliferative arrest, senescence entry, and a marked decrease in AGR2 expression at both intra- and extracellular levels.
-      Importantly, supplementation with recombinant eAGR2 in doxorubicin-treated MCF7 cells significantly reduced senescence entry, indicating that eAGR2 promotes escape from TIS.
-    </p>
-
-    <p>
-      Altogether, these results suggest that AGR2 contributes to resistance to therapy-induced senescence in breast cancer through its extracellular activity.
+      The endoplasmic reticulum–resident protein AGR2 (Anterior Gradient 2), a member of the protein disulfide isomerase (PDI) family, is frequently overexpressed in breast cancer and implicated in tumor growth, invasion, and metastasis. Beyond its intracellular functions, AGR2 is secreted into the tumor microenvironment as extracellular AGR2 (eAGR2), where it acts as a pro-oncogenic factor. Previous work from our team revealed that inhibition of AGR2 expression in lung cancer cells induces a senescent phenotype. Building on these findings, this project aimed to investigate the role of AGR2 in therapy-induced senescence (TIS) in breast cancer cells. We show that TIS induces proliferative arrest, senescence entry, and a marked decrease in AGR2 expression at both intra- and extracellular levels. Importantly, supplementation with recombinant eAGR2 in doxorubicin-treated MCF7 cells significantly reduced senescence entry, indicating that eAGR2 promotes escape from TIS. Altogether, these results suggest that AGR2 contributes to resistance to therapy-induced senescence in breast cancer through its extracellular activity.
     </p>
 
     <h2>🧬 Graphical Abstract</h2>
