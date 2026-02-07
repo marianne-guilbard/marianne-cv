@@ -591,7 +591,7 @@
 
             <div class="entry">
               <p class="entry-title">PhD in Cancer Biology</p>
-              <p class="muted">📍 University of Bordeaux, France — 📅 2023–2026</p>
+              <p class="muted">📍 University of Bordeaux, France📅 2023–2026</p>
               <p>
                 This PhD was undertaken to consolidate my academic training through long-term immersion in research and to
                 develop scientific independence. The doctoral project provided the opportunity to fully integrate the
@@ -679,6 +679,11 @@
     if (menu) menu.removeAttribute("open");
   }
 
+  function openNavMenu() {
+    const menu = document.querySelector(".nav-menu");
+    if (menu) menu.setAttribute("open", "");
+  }
+
   function scrollWithOffset(el, offset = -80) {
     const y = el.getBoundingClientRect().top + window.pageYOffset + offset;
     window.scrollTo({ top: y, behavior: "smooth" });
@@ -699,7 +704,7 @@
     if (target.tagName && target.tagName.toLowerCase() === "details") {
       target.open = true;
       closeNavMenu();
-      scrollWithOffset(target, -80);
+      requestAnimationFrame(() => scrollWithOffset(target, -80));
       return;
     }
 
@@ -708,7 +713,7 @@
     if (parentDetails) {
       parentDetails.open = true;
       closeNavMenu();
-      scrollWithOffset(parentDetails, -80);
+      requestAnimationFrame(() => scrollWithOffset(parentDetails, -80));
     }
   }
 
@@ -729,20 +734,42 @@
 
   /* ===============================
      Close menu when clicking a nav link
-     Then ensure the right accordion opens + scroll offset applies
+     (links are inside .nav-links, not .nav-menu)
      =============================== */
-  document.querySelectorAll(".nav-menu a").forEach(link => {
+  document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
-      // Close immediately (nice on mobile)
       closeNavMenu();
-
-      // Let the hash update happen, then open the right accordion + offset scroll
       setTimeout(openAccordionFromHash, 0);
     });
   });
+
+  /* ===============================
+     Desktop: open menu on hover
+     (only on devices that actually have hover)
+     =============================== */
+  (function enableHoverMenu(){
+    const menu = document.querySelector(".nav-menu");
+    if (!menu) return;
+
+    const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    if (!canHover) return; // don't mess with touch devices
+
+    // Open when mouse enters the whole menu area
+    menu.addEventListener("mouseenter", () => {
+      openNavMenu();
+    });
+
+    // Close when mouse leaves the whole menu area
+    menu.addEventListener("mouseleave", () => {
+      closeNavMenu();
+    });
+
+    // Optional: allow Esc to close
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeNavMenu();
+    });
+  })();
 </script>
-
-
 
 </body>
 </html>
