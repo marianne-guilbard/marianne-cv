@@ -667,25 +667,47 @@
   <a class="backtotop" href="#top">↑ Top</a>
 
   <script>
-    // Open <details> accordion when navigating via hash links (e.g., #conf, #pubs)
-    function openAccordionFromHash() {
-      const hash = window.location.hash;
-      if (!hash) return;
+  /* ===============================
+     Open accordion from hash links
+     =============================== */
+  function openAccordionFromHash() {
+    const hash = window.location.hash;
+    if (!hash) return;
 
-      const target = document.querySelector(hash);
-      if (target && target.tagName && target.tagName.toLowerCase() === "details") {
-        target.open = true;
+    const target = document.querySelector(hash);
+    if (target && target.tagName && target.tagName.toLowerCase() === "details") {
+      target.open = true;
 
-        // Offset for sticky navbar so the title isn't hidden
-        const yOffset = -80;
-        const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-        window.scrollTo({ top: y, behavior: "smooth" });
-      }
+      // Offset for sticky navbar so the title isn't hidden
+      const yOffset = -80;
+      const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
+  }
 
-    window.addEventListener("load", openAccordionFromHash);
-    window.addEventListener("hashchange", openAccordionFromHash);
-  </script>
+  window.addEventListener("load", openAccordionFromHash);
+  window.addEventListener("hashchange", openAccordionFromHash);
+
+  /* ===============================
+     Mobile nav: auto-close menu
+     =============================== */
+  document.addEventListener("click", function (event) {
+    const menu = document.querySelector(".nav-menu");
+    if (!menu) return;
+
+    if (menu.hasAttribute("open") && !menu.contains(event.target)) {
+      menu.removeAttribute("open");
+    }
+  });
+
+  document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      const menu = document.querySelector(".nav-menu");
+      if (menu) menu.removeAttribute("open");
+    });
+  });
+</script>
+
 
 </body>
 </html>
